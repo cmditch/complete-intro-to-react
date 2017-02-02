@@ -1,0 +1,10 @@
+{
+  "presets": [
+    "react",
+    ["es2015", {"modules": false, "loose": true}]
+  ]
+}
+
+// Modules is false, so webpack worries about the tree shaking. So uglify does the job of statically analyzing the code and stripping out things that have no potential to get run - Only includes code that will ever get run. AKA - Tree Shaking or Live Code Inclusion.  Not the same as Dead Code exclusion ?
+
+//Loose is true because we don't care about adhering to the JS spec to the T. So some super small minority of the world might have issues with your app. Leaves out crazy edge cases, and only includes the fast, smaller, polyfills.
