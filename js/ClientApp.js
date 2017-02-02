@@ -7,6 +7,7 @@ import MyTitle from './MyTitle'
 var div = React.DOM.div
 var h1 = React.DOM.h1
 var MyTitleFactory = React.createFactory(MyTitle)
+var randomSentence = "This is a jsx test"
 
 var MyFirstComponent = React.createClass({
   render: function () {
@@ -16,7 +17,7 @@ var MyFirstComponent = React.createClass({
         MyTitleFactory({title: 'no more semicolon\'s plz', color: 'mediumaquamarine'}),
         MyTitleFactory({title: 'ur muther', color: 'rebeccapurple'}),
         MyTitleFactory({title: 'wipe the lint off your shirt', color: 'cornflowerblue'}), 
-        <h1>This is a jsx test</h1>
+        <h1 style={{color: "olive" }}>{randomSentence.toUpperCase()}</h1>
       )
     )
   }

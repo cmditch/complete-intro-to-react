@@ -1,17 +1,17 @@
 import React from 'react'
 
-var div = React.DOM.div
-var h1 = React.DOM.h1
-
-
 var MyTitle = React.createClass({
   render: function () {
-    return (
-      div({style: {border: "1px"}},
-        h1({style: {color: this.props.color} }, this.props.title)
+    const style = {color: this.props.color}
+      return (
+        <div>
+          <h1 style= { style }>
+            {this.props.title}
+          </h1>
+        </div>
       )
-    )
+    }
   }
-})
+)
 
 export default MyTitle
