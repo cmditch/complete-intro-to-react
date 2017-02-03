@@ -1,0 +1,16 @@
+exports[`test Search snapshot test 1`] = `
+<div
+  className="search">
+  <header>
+    <h1>
+      RouteLog
+    </h1>
+    <input
+      onChange={[Function bound handleSearchTermChange]}
+      placeholder="Search"
+      type="text"
+      value="this is the default string" />
+  </header>
+  <div />
+</div>
+`;
