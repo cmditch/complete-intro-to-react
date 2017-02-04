@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "A two day workshop on a complete intro to React",
   "main": "index.js",
-  "author": "Brian Holt <btholt@gmail.com>",
+  "author": "Coury Ditch",
   "license": "MIT",
   "scripts": {
     "lint": "eslint js/**/*.js webpack.config.js",
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "watch": "npm run build -- --watch"
+    "watch": "npm run build -- --watch",
+    "test": "NODE_ENV=test jest",
+    "update-test": "npm run test -- -u"
   },
   "dependencies": {
     "axios": "0.15.2",
